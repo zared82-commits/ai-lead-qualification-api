@@ -26,3 +26,31 @@ POST /analyze-lead
   "budget": "unknown",
   "language": "en"
 }
+
+📤 Example Response
+{
+  "lead_score": 8,
+  "intent": "requesting pricing and scheduling a call",
+  "recommended_action": "Schedule a call to discuss premium package pricing",
+  "confidence": "high",
+  "notes": "Lead is actively seeking information on pricing and is open to a call."
+}
+
+▶ How To Run Locally
+
+pip install -r requirements.txt
+uvicorn app.main:app --reload
+
+Open Swagger UI:
+http://localhost:8000/docs
+
+👨‍💻 Author
+
+Eduard Zaremba
+Backend / DevOps / AI Integration Engineer
+
+
+
+
+
+
